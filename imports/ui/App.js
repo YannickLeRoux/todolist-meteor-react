@@ -22,9 +22,9 @@ class App extends Component {
   }
 
   renderTasks() {
-    let filterTasks = this.props.tasks;
+    let filteredTasks = this.props.tasks;
     if (this.state.hideCompleted) {
-      filterTasks = filterTasks.filter(task => !task.checked )
+      filteredTasks = filterTasks.filter(task => !task.checked )
     }
     return filteredTasks.map((task) => {
       const currentUserId = this.props.currentUser && this.props.currentUser._id;

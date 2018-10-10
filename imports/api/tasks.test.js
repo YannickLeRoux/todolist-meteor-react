@@ -37,3 +37,5 @@ if (Meteor.isServer) {
         assert.equal(Tasks.find().count(), 0);
       });
     });
+  });
+}
