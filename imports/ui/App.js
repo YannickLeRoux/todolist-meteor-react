@@ -87,6 +87,7 @@ class App extends Component {
         <ul>
           {this.renderTasks()}
         </ul>
+        <a className="source-code-link" href="https://github.com/YannickLeRoux/todolist-meteor-react">Git Repo</a>
       </div>
     );
   }
